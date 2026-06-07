@@ -8,7 +8,7 @@ pipeline{
         }
         stage('package'){
             steps{
-                bat 'mvn package ',
+                bat 'mvn package '
                 echo 'package completed'
             }
         }
