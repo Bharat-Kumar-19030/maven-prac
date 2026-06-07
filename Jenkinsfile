@@ -5,7 +5,7 @@ pipeline{
             bat 'mvn compile'
         }
         stage('package'){
-            bat 'mvn package '
+            bat 'mvn package'
         }
     }
 }
