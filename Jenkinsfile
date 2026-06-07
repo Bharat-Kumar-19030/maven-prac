@@ -2,10 +2,15 @@ pipeline{
     agent any
     stages{
         stage('compile'){
-            bat 'mvn compile'
+            steps{
+                bat 'mvn compile'
+            }
         }
         stage('package'){
-            bat 'mvn package'
+            steps{
+                bat 'mvn package ',
+                echo 'package completed'
+            }
         }
     }
 }
